@@ -118,7 +118,7 @@
   gap: 79px;
   align-items: center;
   position: relative;
-  inset: 123px 50px 51px 78px;
+  inset: 123px 0 51px 78px;
 }
 
 .cover__description-text {
@@ -222,11 +222,6 @@
   justify-items: center;
   list-style: none;
 }
-
-.about__column-image {
-  position: static;
-}
-
 .about__logo {
   background-color: black;
   border-radius: 100%;
