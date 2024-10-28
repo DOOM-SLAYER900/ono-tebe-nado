@@ -118,7 +118,8 @@
   gap: 79px;
   align-items: center;
   position: relative;
-  inset: 123px 0 51px 78px;
+  inset: 123px 0 51px;
+  margin-left: 4.9em;
 }
 
 .cover__description-text {
