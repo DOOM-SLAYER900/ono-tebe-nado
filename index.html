@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./fonts/fonts.css">
-    <link rel="stylesheet" href="./styles/global.css">
-    <link rel="stylesheet" href="./styles/style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
   </head>
   <body>
     <header class="header">
       <nav class="header__menu">
         <ul class="header__links-list">
-          <li
-            class="header__links-list-item header-footer__links-list-item_no-bullit"
-          >
+          <li class="header__links-list-item header__links-list-item_no-bullit">
             <a href="#0" class="header__link">главная</a>
           </li>
           <li class="header__links-list-item">
@@ -31,17 +29,18 @@
           class="header__logo-image"
           src="./images/logo-black.svg"
           alt="Логотип: ОНО ТЕБЕ НАДО"
-      ></a>
+      /></a>
       <address class="address header__address">
         <a href="tel:+99995555555" class="address__links link"
           >+9 999 555 5555</a
-        ><br><a href="mailto:info@sobaka.ge" class="address__links link"
+        ><br /><a href="mailto:info@sobaka.ge" class="address__links link"
           >info@sobaka.ge</a
-        ><br><span>наб. Принсенграхт 263- <br>265, Амстердам</span>
+        ><br /><span>наб. Принсенграхт 263- <br />265, Амстердам</span>
       </address>
     </header>
     <main>
       <section class="cover">
+        <div class="overlay"></div>
         <h1 class="cover__title">
           <span class="aligned-text"
             >о<span class="cover__title__letter-spacing">но</span></span
@@ -54,31 +53,24 @@
           >
         </h1>
         <div class="cover__description">
-          <div class="cover__description-text">
+          <p class="cover__description-text">
             Аукцион вещей, в которые никто не верил
-          </div>
-          <button class="bet-button">Сделать ставку</button>
+          </p>
+          <button type="submit" class="bet-button">Сделать ставку</button>
         </div>
-        <img class="cover__image" src="./images/cover.jpg" alt="cover">
-        <div class="overlay"></div>
       </section>
       <section class="lots">
         <h2 class="lots__heading">Лоты</h2>
         <ul class="lots__card-list">
           <li class="lots__card-list-item">
             <a href="#0" class="link"
-              ><div class="card">
-                <img
-                  class="card__image"
-                  src="./images/card-lot-01.jpg"
-                  alt="Лот-1"
-                >
+              ><div class="card card_type_film">
                 <div class="overlay"></div>
-                <div class="card__title">
+                <h3 class="card__title">
                   <span class="card__title-line">Фильм режиссёра,</span>
                   <span class="card__title-line">который бросил</span>
                   <span class="card__title-line">киношколу</span>
-                </div>
+                </h3>
                 <p class="card__text">
                   Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
                   ставка, если бы вы не знали, что режиссёр — Пол Томас
@@ -89,19 +81,14 @@
           </li>
           <li class="lots__card-list-item">
             <a href="#0" class="link"
-              ><div class="card">
-                <img
-                  class="card__image"
-                  src="./images/card-lot-02.jpg"
-                  alt="Лот-2"
-                >
+              ><div class="card card_type_book">
                 <div class="overlay"></div>
-                <div class="card__title">
+                <h3 class="card__title">
                   <span class="card__title-line">Книга, где описан</span>
                   <span class="card__title-line">один скучный день</span>
                   <span class="card__title-line">из жизни</span>
                   <span class="card__title-line">рекламного агента</span>
-                </div>
+                </h3>
                 <p class="card__text">
                   Объёмом почти в тысячу страниц. Иногда без знаков препинания и
                   с переходами на древнеанглийский. В ней одновременно
@@ -115,19 +102,14 @@
           </li>
           <li class="lots__card-list-item">
             <a href="#0" class="link"
-              ><div class="card">
-                <img
-                  class="card__image"
-                  src="./images/card-lot-03.jpg"
-                  alt="Лот-3"
-                >
+              ><div class="card card_type_picture">
                 <div class="overlay"></div>
-                <div class="card__title">
+                <h3 class="card__title">
                   <span class="card__title-line">Картина, которую</span>
                   <span class="card__title-line">повторит даже 5-</span>
                   <span class="card__title-line">летний сын</span>
                   <span class="card__title-line">маминой подруги</span>
-                </div>
+                </h3>
                 <p class="card__text">
                   Ну действительно, там линия, тут кружочек, а здесь и вовсе
                   что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
@@ -140,24 +122,24 @@
         </ul>
         <a class="lots__look-more-link link" href="#0">посмотреть больше</a>
       </section>
-      <section class="about lots__card-list">
+      <section class="about">
         <div class="card__image about__column-image">
           <div class="about__logo">
-            <img src="./images/logo-white.svg" alt="Логотип: ОНО ТЕБЕ НАДО">
+            <img src="./images/logo-white.svg" alt="Логотип: ОНО ТЕБЕ НАДО" />
           </div>
         </div>
         <div class="about__column-text">
-          <h3 class="about__title">Об аукционе</h3>
-          <p class="about__text letter-spacing-one-percent">
+          <h4 class="about__title">Об аукционе</h4>
+          <p class="about__text letter-spacing-here">
             Здесь вы не встретите очередное
-            <span class="letter-spacing-zero-percent"
+            <span class="about__text-letter-spacing-pretentious"
               >пафосное собрание невероятно дорогого антиквариата.</span
             >
-            <span class="letter-spacing-two-percent">Наши</span> лоты вообще не
-            должны
-            <span class="letter-spacing-minus-one-percent">были попасть</span>
+            <span class="about__text-letter-spacing-our">Наши</span> лоты вообще
+            не должны
+            <span class="about__text-letter-spacing-were">были попасть</span>
             ни на один аукцион. Потому что кому нужен
-            <span class="letter-spacing-three-percent">дневник</span>
+            <span class="about__text-letter-spacing-diary">дневник</span>
             девочки-подростка или картина, которую может нарисовать даже
             ребёнок? Кому нужны все эти странные вещи, созданные любителями?
           </p>
@@ -165,12 +147,13 @@
             Слишком сложные или, наоборот, слишком простые. Опережающие своё
             время. В пух и прах растерзанные критиками. Непринятые и непонятые.
             Когда-то
-            <span class="letter-spacing-four-percent">они</span> казались просто
-            <span class="letter-spacing-one-percent">неудачными.</span> Но,
-            несмотря на критику, кажущуюся простоту или сложность, сейчас без
-            этих лотов невозможно представить современную культуру. Когда в эти
-            вещи не верил никто, продолжали верить их создатели. И сейчас эти
-            лоты стали культовыми.
+            <span class="about__text-letter-spacing-they">они</span> казались
+            просто
+            <span class="about__text-letter-spacing-unlucky">неудачными.</span>
+            Но, несмотря на критику, кажущуюся простоту или сложность, сейчас
+            без этих лотов невозможно представить современную культуру. Когда в
+            эти вещи не верил никто, продолжали верить их создатели. И сейчас
+            эти лоты стали культовыми.
           </p>
         </div>
       </section>
@@ -179,15 +162,13 @@
       <address class="address footer__address">
         <a href="tel:+99995555555" class="address__links link"
           >+9 999 555 5555</a
-        ><br><a href="mailto:info@sobaka.ge" class="address__links link"
+        ><br /><a href="mailto:info@sobaka.ge" class="address__links link"
           >info@sobaka.ge</a
-        ><br><span>наб. Принсенграхт 263- <br>265, Амстердам</span>
+        ><br /><span>наб. Принсенграхт 263- <br />265, Амстердам</span>
       </address>
       <nav class="footer__menu">
         <ul class="footer__menu-list">
-          <li
-            class="footer__links-list-item header-footer__links-list-item_no-bullit"
-          >
+          <li class="footer__links-list-item footer__links-list-item_no-bullit">
             <a href="#0" class="header__link">главная</a>
           </li>
           <li class="footer__links-list-item">
@@ -198,20 +179,26 @@
           </li>
         </ul>
       </nav>
-      <div class="footer__social-list">
-        <a href="#0" class="footer__social-link">
-          <img src="./images/yt.svg" alt="Ютуб" class="footer__social-icon"
-        ></a>
-        <a href="#0" class="footer__social-link">
-          <img src="./images/vk.svg" alt="ВК" class="footer__social-icon"
-        ></a>
-        <a href="#0" class="footer__social-link">
-          <img
-            src="./images/pinterest.svg"
-            alt="Pinterest"
-            class="footer__social-icon"
-        ></a>
-      </div>
+      <ul class="footer__social-list">
+        <li>
+          <a href="#0" target="_blank" class="footer__social-link">
+            <img src="./images/yt.svg" alt="Ютуб" class="footer__social-icon"
+          /></a>
+        </li>
+        <li>
+          <a href="#0" target="_blank" class="footer__social-link">
+            <img src="./images/vk.svg" alt="ВК" class="footer__social-icon"
+          /></a>
+        </li>
+        <li>
+          <a href="#0" target="_blank" class="footer__social-link">
+            <img
+              src="./images/pinterest.svg"
+              alt="Pinterest"
+              class="footer__social-icon"
+          /></a>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>

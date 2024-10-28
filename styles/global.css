@@ -8,6 +8,7 @@ body {
   width: 1100px;
   margin: 0 auto;
   font-family: Raleway, sans-serif;
+  background-color: white; /* Потребовали сомвестить обращение к body внутри именно global.css */
 }
 
 h1,
