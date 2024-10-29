@@ -3,6 +3,13 @@
   border-bottom: 1px solid currentColor;  /* так как сместить подчеркивание нельзя. И со временем придумал все такие ссылки в класс*/
 }
 
+.header__link,
+.header__link_active,
+.footer__link {
+  text-decoration: none;
+  text-wrap: nowrap;
+}
+
 .header {
   margin: 92px 24px 30px;
   padding: 0 27px;
@@ -17,12 +24,6 @@
   display: flex;
   flex-direction: row;
   gap: 31px;
-}
-
-.header__link,
-.header__link_active {
-  text-decoration: none;
-  text-wrap: nowrap;
 }
 
 .header__links-list-item {
@@ -62,22 +63,23 @@
 }
 
 .cover {
+  margin-top: -66px;
   position: relative;
-  inset: 0;
-  top: -66px;
+  z-index: 1;
   width: 1100px;
   height: 757px;
   text-transform: uppercase;
   color: white;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
-  background-position: 0;
+  background-position: center;
   background-size: cover;
 }
 
 .overlay {
   position: absolute;
   inset: 0;
+  z-index: -1;
   background-color: rgb(0 0 0/0.6);
   opacity: 1;
   width: 100%;
@@ -85,8 +87,7 @@
 }
 
 .cover__title {
-  position: relative;
-  margin: 158px 50px auto;
+  margin: 158px 20px auto 50px;
   padding-top: 156px;
   font-weight: 700;
   font-size: 100px;
@@ -103,13 +104,15 @@
 
 .aligned-text_center {
   display: block;
-  margin: 0.02em 2.86em;
+  margin-top: 0.03em;
+  margin-left: -0.3em; /* Так как этот элемент текста на макете не центрирован правильно я уменьшил отступ в ручную */
+  text-align: center;  /* Таким образом текст будет идентичен макету но будет всегда центрирован */
 }
 
 .aligned-text_right {
   display: block;
   line-height: 1.24em;
-  margin-left: 5.84em;
+  text-align: end;
 }
 
 .cover__description {
@@ -117,9 +120,7 @@
   flex-direction: row;
   gap: 79px;
   align-items: center;
-  position: relative;
-  inset: 123px 0 51px;
-  margin-left: 4.9em;
+  margin: 124px 0 50px 78px;
 }
 
 .cover__description-text {
@@ -141,7 +142,7 @@
 }
 
 .lots {
-  margin-top: 114px;
+  margin-top: 180px;
 }
 
 .lots__heading {
@@ -164,12 +165,13 @@
 
 .card {
   position: relative;
+  z-index: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 0 40px 49px 40px;
+  padding: 0 40px 47px 40px;
   width: 334px;
-  height: 563px;
+  min-height: 563px;
   color: white;
   background-repeat: no-repeat;
   background-position: center;
@@ -189,9 +191,8 @@
 }
 
 .card__title {
-  position: relative;
   justify-content: start;
-  top: 51px;
+  margin-top: 51px;
   text-transform: uppercase;
   font-size: 22px;
   font-weight: 700;
@@ -202,8 +203,6 @@
 }
 
 .card__text {
-  position: relative;
-  margin-top: 2.5em;
   font-size: 20px;
   font-weight: 400;
 }
@@ -235,7 +234,7 @@
 
 .about__column-text {
   flex-grow: 1;
-  margin: 257px 3px 0 46px;
+  margin: 257px 3.6px 0 46px;
 }
 
 .about__title {
