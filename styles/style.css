@@ -11,7 +11,7 @@
 }
 
 .header {
-  margin: 92px 24px 30px;
+  margin: 92px 24px 0;
   padding: 0 27px;
   display: grid;
   place-items: center;
@@ -63,7 +63,6 @@
 }
 
 .cover {
-  margin-top: -66px;
   position: relative;
   z-index: 1;
   width: 1100px;
@@ -87,8 +86,8 @@
 }
 
 .cover__title {
-  margin: 158px 20px auto 50px;
-  padding-top: 156px;
+  margin: 92px 50px auto;
+  padding-top: 155px;
   font-weight: 700;
   font-size: 100px;
   letter-spacing: 0.3em;
@@ -98,15 +97,17 @@
   letter-spacing: 0.6em;
 }
 
+.cover__title__cancel-letter-spacing {
+  letter-spacing: 0;
+}
+
 .aligned-text {
-  line-height: 1.32em;
+  line-height: 1.36em;
 }
 
 .aligned-text_center {
   display: block;
-  margin-top: 0.03em;
-  margin-left: -0.3em; /* Так как этот элемент текста на макете не центрирован правильно я уменьшил отступ в ручную */
-  text-align: center;  /* Таким образом текст будет идентичен макету но будет всегда центрирован */
+  text-align: center;
 }
 
 .aligned-text_right {
